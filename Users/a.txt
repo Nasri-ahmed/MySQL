@@ -1,0 +1,11 @@
+select * from users;
+insert into users (first_name, last_name, email) values ('Ahmed', 'Nasri', 'Ahmed@gmail.com');
+insert into users (first_name, last_name, email) values ('Aymen', 'Ayedi', 'Ayedi@gmail.com');
+insert into users (first_name, last_name, email) values ('Alaa', 'Amri', 'Alla@gmail.com');
+select * from users where email = 'Ahmed@gmail.com';
+SELECT * FROM users ORDER BY id DESC LIMIT 1;
+update users  set last_name = 'panackas' where id = 3;
+delete  from users where id = 2;
+
+select * from users order by first_name;
+select * from users order by first_name desc;
